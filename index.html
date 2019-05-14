@@ -1,0 +1,270 @@
+
+<html>
+
+    <head>
+
+            <link rel="stylesheet" href="timetable.css">
+            <link rel="stylesheet" href="popup.css">
+            <script src="moment.js"></script>
+            <script src="data.js" type="text/javascript"></script>\
+            <script src="timetable.js" type="text/javascript"> </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div>
+
+            <button id="makeNew">Make a New Course</button>
+
+            <select id="buildings">
+
+                <option value="All">All</option>
+                <option value="Mac">Mac</option>
+                <option value="Cage">Cage</option>
+                <option value="Laughlin">Laughlin</option>
+                <option value="Evans">Evans</option>
+                <option value="Cook">Cook</option>
+                <option value="Moon">Moon</option>
+                <option value="Green">Green</option>
+                <option value="Sister's Hall">Sister's Hall (Theatre)</option>
+
+            </select>
+
+
+            <select id="Mac" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Biology">Biology</option>
+
+            </select>
+
+            <select id="Evans" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Political Science">Political Science / Government</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Philosophy">Philosophy</option>
+
+            </select>
+
+            <select id="Cage" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Kineselogy">Health and Wellness (Kineselogy)</option>
+                <option value="Excercise Science">Excercise Science</option>
+
+            </select>
+
+            <select id="Laughlin" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Political Science">Public Relations</option>
+                <option value="Visual Communications">Visual Communications</option>
+                <option value="Oral Communications">Oral Communications</option>
+                <option value="Communications">Communications</option>
+
+            </select>
+
+            <select id="Green" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Business">Business</option>
+
+            </select>
+
+            <select id="Cook" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Business">Business</option>
+
+            </select>
+
+            <select id="Sister's Hall" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Business">Business</option>
+
+            </select>
+
+            <select id="Moon" class="hide selSec">
+
+                <option value="All">All</option>
+                <option value="Political Science">Political Science / Government</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Philosophy">Philosophy</option>
+
+            </select>
+
+        </div>
+
+        <div class="timetable">
+            
+            <aside>
+                
+                <ul>
+                    
+                    <li>
+                        
+                        <span class="row-heading"> Monday </span>
+                    
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="row-heading"> Tuesday </span>
+                    
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="row-heading"> Wednesday </span>
+                    
+                    </li>
+
+                    <li>
+                        
+                        <span class="row-heading"> Thursday </span>
+                        
+                    </li>
+
+                    <li>
+                        
+                        <span class="row-heading"> Friday </span>
+                        
+                    </li>
+                
+                </ul>
+            
+            </aside>
+            
+            <section>
+                
+                <time>
+                    
+                    <header>
+                        
+                        <ul>
+
+                            <li>
+                            
+                                <span class="time-label">08:00</span>
+                                
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">09:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">10:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">11:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">12:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">1:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">2:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">3:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">4:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">5:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">6:00</span>
+                            
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="time-label">7:00</span>
+                            
+                            </li>
+
+                            <li>
+                                
+                                <span class="time-label">8:00</span>
+                            
+                            </li>
+                            
+                        </ul>
+                    
+                    </header>
+                    
+                    <ul class="room-timeline">
+                        
+                        <li id="M" class="day" >
+                          
+                        </li>
+                        
+                        <li id="T" class="day">
+                              
+                        </li>
+                        
+                        <li id="W" class="day" >
+                            
+                        </li>
+                        
+                        <li id="H" class="day" >
+                             
+                        </li>
+                        
+                        <li id="F" class="day" >
+                            
+                        </li>
+                    
+                    </ul>
+                
+                </time>
+            
+            </section>
+        
+        </div>
+        
+        <div id="container">
+
+        </div>
+
+</body>
+
+</html>
